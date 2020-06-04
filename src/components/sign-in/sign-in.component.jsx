@@ -10,11 +10,11 @@ import './sign-in.styles.scss'
 
 class SignIn extends React.Component{
     constructor(props){
-       super(props) 
+       super(props); 
        this.state = {
            email:'',
            password:''
-        }
+        };
         
     }
         handleSubmit = event => {
@@ -29,7 +29,7 @@ class SignIn extends React.Component{
         handleChange = event =>{
             const {value, name} = event.target;
             this.setState({
-                [name]:value
+                [name]: value
             })
         }
 
